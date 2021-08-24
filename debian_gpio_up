@@ -2,9 +2,9 @@
 
 ##############################################################################
 #
-# GPIO setup script for gpio pins on armbian. Run this script to set up the GPIO
+# GPIO setup script for gpio pins on debian. Run this script to set up the GPIO
 # configuration specified in the GPIO specific configuration file
-# /etc/armbian_gpio.conf
+# /etc/debian_gpio.conf
 #
 ##############################################################################
 
@@ -12,7 +12,7 @@
 set -eu
 
 # Read configuration file
-GPIO_CONF=/etc/armbian_gpio.conf"}
+GPIO_CONF=/etc/debian_gpio.conf"}
 [ -r "${GPIO_CONF}" ] && . "${GPIO_CONF}"
 
 

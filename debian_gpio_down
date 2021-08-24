@@ -3,7 +3,7 @@
 ##############################################################################
 #
 # GPIO teardown script for arbian gpio pins. Run this script to undo the GPIO
-# configuration done by the armbian_gpio_up script.
+# configuration done by the debian_gpio_up script.
 #
 ##############################################################################
 
@@ -11,7 +11,7 @@
 set -eu
 
 # Read configuration file
-GPIO_CONF=/etc/armbian_gpio.conf"}
+GPIO_CONF=/etc/debian_gpio.conf"}
 [ -r "${GPIO_CONF}" ] && . "${GPIO_CONF}"
 
 
